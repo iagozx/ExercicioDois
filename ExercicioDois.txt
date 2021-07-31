@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExercicioDois
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double KgLentilha, Calc, ValorLentilha;
+            ValorLentilha = 1.50;
+
+            Console.WriteLine("Bem-vindo ao programa PLUS, o valor do kg da lentilha é de R$ 1,50.\n ");
+            Console.WriteLine("Digite quantos kg você deseja comprar: ");
+            KgLentilha = Convert.ToDouble(Console.ReadLine());
+
+            Console.Clear();
+
+            Calc = ValorLentilha * KgLentilha;
+            Console.WriteLine("Foram:" + KgLentilha);
+            Console.WriteLine("Kg.\n");
+            Console.WriteLine("O valor final é de: R$" + Calc);
+            Console.ReadKey();
+
+        }
+    }
+}
